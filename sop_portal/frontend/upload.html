@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Upload SOP</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Upload New SOP</h1>
+  <form id="uploadForm">
+  <label for="title">Title:</label><br />
+  <input type="text" id="title" name="title" required /><br />
+
+  <label for="team">Team:</label><br />
+  <select id="team" name="team" required>
+    <option value="">--Select Team--</option>
+    <option value="mq">MQ</option>
+    <option value="ace">ACE</option>
+    <option value="linux">Linux</option>
+    <option value="portal">Portal</option>
+    <option value="config">Config</option>
+    <option value="non prod">Non Prod</option>
+    <option value="db">DB</option>
+    <option value="windows">Windows</option>
+    <option value="common">Common</option>
+  </select><br />
+
+ <label for="sop_text">SOP Content:</label><br />
+<textarea id="sop_text" name="sop_text"rows="10" required></textarea><br />
+
+
+  <button type="submit">Upload</button>
+</form>
+
+    <br />
+    <a href="index.html">Back to SOP List</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
